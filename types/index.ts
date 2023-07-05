@@ -9,6 +9,7 @@ export interface CustomButtonProps {
     textStyles?: string;
     rightIcon?: string;
     isDisabled?: boolean;
+    
 }
 export interface SearchManufacturerProps{
     manufacturer: string;

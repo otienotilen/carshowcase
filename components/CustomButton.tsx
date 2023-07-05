@@ -10,8 +10,9 @@ export default function CustomButton({title, containerStyles,
      type={btnType}
      className={ containerStyles}
      onClick={handleClick}
+     
     >
-      <span className={'flex-1 ${textStyles}'}>
+      <span className={'flex-1 ${ts}'}>
          {title}
       </span>
       {rightIcon && (
