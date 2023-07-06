@@ -19,9 +19,9 @@ const CarCard = ({ car }: CarCardProps) => {
 
   const carRent = calculateCarRent(city_mpg, year);
 
-    function generateCarImageUrl(car: CarProps): string | ( | import("next/image").StaticImageData) {
-        throw new Error("Function not implemented.");
-    }
+    // function generateCarImageUrl(car: CarProps): string | ( | import("next/image").StaticImageData) {
+    //     throw new Error("Function not implemented.");
+    // }
 
   return (
     <div className="car-card group">
@@ -35,10 +35,10 @@ const CarCard = ({ car }: CarCardProps) => {
         <span className='self-start text-[14px] leading-[17px] font-semibold'>$</span>
         {carRent}
         <span className='self-end text-[14px] leading-[17px] font-medium'>/day</span>
-      </p>
+      </p> 
 
       <div className='relative w-full h-40 my-3 object-contain'>
-        <Image src={generateCarImageUrl(car)} alt='car model' fill priority className='object-contain' />
+        <Image src='/hero.png' alt='car model' fill priority className='object-contain' />
       </div>
 
       <div className='relative flex w-full mt-2'>
