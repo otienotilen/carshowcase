@@ -87,7 +87,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       rounded-lg"
                       >
                         <Image
-                          src={generateCarImageUrl(car, "angle")}
+                          src={generateCarImageUrl(car, "29")}
                           alt="car model"
                           fill
                           priority
@@ -100,7 +100,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       rounded-lg"
                       >
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "33")}
                           alt="car model"
                           fill
                           priority
@@ -113,7 +113,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       rounded-lg"
                       >
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "13")}
                           alt="car model"
                           fill
                           priority
