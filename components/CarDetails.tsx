@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CarProps } from "@/types";
 import React from "react";
+import { generateCarImageUrl } from "@/utls";
 
 interface CarDetailsProps {
   isOpen: boolean;
@@ -72,7 +73,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
               rounded-lg"
                     >
                       <Image
-                        src="/hero.png"
+                        src={generateCarImageUrl(car, "angle")}
                         alt="car model"
                         fill
                         priority
@@ -86,7 +87,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       rounded-lg"
                       >
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "angle")}
                           alt="car model"
                           fill
                           priority
