@@ -113,7 +113,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       rounded-lg"
                       >
                         <Image
-                          src={generateCarImageUrl(car, "13")}
+                          src={generateCarImageUrl(car, "")}
                           alt="car model"
                           fill
                           priority
